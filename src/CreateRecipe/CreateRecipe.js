@@ -13,7 +13,8 @@ class CreateRecipe extends Component {
     }
   }
   
-  render() {    
+  render() {
+    console.log(this.props.history)    
       return (
       <div className='create-recipe'>
         <header>
@@ -23,6 +24,7 @@ class CreateRecipe extends Component {
           <form id="create-recipe" onSubmit={(e) => {
                   this.props.addRecipe(this.state); 
                   e.preventDefault();
+
                   }}>
             <section className="form-section overview-section">
               <label htmlFor="coffee-name">Coffee Name</label>

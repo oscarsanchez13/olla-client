@@ -9,7 +9,12 @@ function CoffeeCatalog(props) {
         <h1>Coffee Masterpieces</h1>
       </header>
       <section>
-        <form className="search">
+        <form className="search" onSubmit={
+          (e) => {
+            e.preventDefault();
+            props.setSearchTerm(e.target.childNodes[0].value)
+          } 
+        }>
           <input type="text" placeholder="Search.." name="search"/>
           <button type="submit"><i className="fa fa-search"></i></button>
         </form>

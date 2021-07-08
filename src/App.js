@@ -5,30 +5,18 @@ import LandingPage from './LandingPage/LandingPage';
 import CoffeeCatalog from './CoffeeCatalog/CoffeeCatalog';
 import Footer from './Footer/Footer';
 import CreateRecipe from './CreateRecipe/CreateRecipe';
+import { set } from 'date-fns';
 
 export default class App extends React.Component {
   state = {
-    recipes: [
-      {
-        id: 1,
-        coffeeName: 'Cafe De Olla',
-        coffeeImage: './images/cafe-de-olla.jpg',
-        description: 'Simmered with a cinnamon stick, traditional Mexican coffee uses piloncillo (unrefined cane sugar) and is served in a clay mug, which locals believe brings out coffee\'s flavors.',
-        ingredients: '',
-        instructions: '',
-      },
-      {
-        id: 2,
-        coffeeName: 'Frappe',
-        coffeeImage: '',
-        description: 'Simmered with a cinnamon stick, traditional Mexican coffee uses piloncillo (unrefined cane sugar) and is served in a clay mug, which locals believe brings out coffee\'s flavors.',
-        ingredients: '',
-        instructions: '',
-      }
-    ]
+    recipes: [],
+    searchTerm: 'ca'
   }
 
   componentDidMount() {
+    fetch('http://localhost:8000/recipes')
+    .then(res => res.json())
+    .then(res => this.setState({recipes:res}))  
     // get recipes from backend
   }
 
@@ -41,6 +29,14 @@ export default class App extends React.Component {
       recipes: newRecipes
     })
     // add endpoint
+  }
+
+  search = () => {
+    return this.state.recipes.filter((recipe) => recipe.coffeeName.toLowerCase().includes(this.state.searchTerm))
+  }
+
+  setSearchTerm = (term) => {
+    this.setState({searchTerm: term})
   }
 
   render() {
@@ -57,7 +53,7 @@ export default class App extends React.Component {
             <LandingPage />
           </Route>
           <Route path='/discover'>
-            <CoffeeCatalog recipes={this.state.recipes}/>
+            <CoffeeCatalog setSearchTerm={this.setSearchTerm} recipes={this.search()}/>
           </Route>
           <Route path='/create' render={
             () => <CreateRecipe addRecipe={this.addRecipe}/>
