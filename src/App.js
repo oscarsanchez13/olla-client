@@ -10,7 +10,7 @@ import { set } from 'date-fns';
 export default class App extends React.Component {
   state = {
     recipes: [],
-    searchTerm: 'ca'
+    searchTerm: ''
   }
 
   componentDidMount() {
