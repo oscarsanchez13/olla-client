@@ -3,12 +3,16 @@
 }
 
 body {
-  font-family: "Open Sans",
-  sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
-  text-align: center;
+  text-align: left;
   line-height: 1.5;
   min-width: 320px;
+  background-image: url('./img/landing-page.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 /* Layout for header */
@@ -23,6 +27,12 @@ header {
   line-height: .75;
 }
 
+footer {
+  padding-top: 2rem;
+  padding-bottom: 1.5;
+  color: white;
+  text-align: center;
+}
 /* ---  Navigation --- */
 
 header nav {
@@ -34,7 +44,7 @@ header nav {
 header h1 {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: center;  
 }
 
 header nav ul {
@@ -56,14 +66,46 @@ header nav ul li a:hover {
   color: brown;
 }
 
+header h1, a {
+  color: white;
+}
+
 /* sections */
 
 section {
-  padding: 30px 15px 0;
+  padding: 30px 15px 20px 20px;
+  border: 0px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px black;
+}
+
+section:nth-child(odd) {
+  background-color: #EDE0D4;
+  color: #7F5539;
 }
 
 section:nth-child(even) {
-  background-color: #ddd;
+  background-color: #B08968;
+  color: #EDE0D4;
+}
+
+a {
+  text-decoration: none;
+  
+}
+
+a:hover {
+  color: brown;
+}
+
+.logo{
+  font-size: xxx-large;  
+  padding: 0px;
+}
+
+span {
+  font-size: small;
+  padding: 0;
 }
 
 p, h2 {
@@ -112,12 +154,14 @@ button {
   margin: 0px 10px 0px 10px;
 }
 
+
+
 label p {
   margin: 6px 0 23px;
 }
 
 p + p {
-  margin-top: 15px;
+  margin-top: 15px;  
 }
 
 form {
@@ -133,7 +177,7 @@ input[type="range"] {
 }
 
 .form-section {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .button-section {
@@ -173,6 +217,36 @@ input[type="range"] {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Groups & Items  (Mobile First) */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+/* Groups & Items  (Desktop) */
+
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+  }
 }
 
 /* Favorite star */

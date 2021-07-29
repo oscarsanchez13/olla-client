@@ -8,7 +8,7 @@ function CoffeeCatalog(props) {
       <header role="banner">
         <h1>Coffee Masterpieces</h1>
       </header>
-      <section>
+      <section className='form-section'>
         <form className="search" onSubmit={
           (e) => {
             e.preventDefault();

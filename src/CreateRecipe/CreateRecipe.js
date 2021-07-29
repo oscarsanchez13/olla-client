@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import './CreateRecipe.css';
 
 class CreateRecipe extends Component {
@@ -13,6 +14,10 @@ class CreateRecipe extends Component {
     }
   }
   
+  handleSubmit() {
+    this.props.history.push('/discover')
+  }
+  
   render() {
     console.log(this.props.history)    
       return (
@@ -20,11 +25,11 @@ class CreateRecipe extends Component {
         <header>
           <h1>Create recipe</h1>
         </header>
-        <section>
+        <div>
           <form id="create-recipe" onSubmit={(e) => {
-                  this.props.addRecipe(this.state); 
+                  this.props.addRecipe(this.state);
+                  this.handleSubmit(); 
                   e.preventDefault();
-
                   }}>
             <section className="form-section overview-section">
               <label htmlFor="coffee-name">Coffee Name</label>
@@ -35,7 +40,7 @@ class CreateRecipe extends Component {
                 name="coffee-name" 
                 placeholder="Waker Upper" required/>
             </section>
-            <section className="image-section">
+            <section className="form-section image-section">
               <label htmlFor="img">Coffee Image(<em>optional</em>)</label>
               <input 
                 type="url" 
@@ -82,15 +87,14 @@ class CreateRecipe extends Component {
                 5. Pour a bit of the reserved coffee through the foam in each cup. Dust with cocoa powder is desired. Serve immediately.'
                 required/>
             </section>                               
-            <section className="button-section">
+            <section className="button-section center">
               <button type="submit" >Submit</button>
-              <button type="reset">Reset</button>
             </section>
           </form>
-        </section>
+        </div>
       </div>
     );
   }  
 }
 
-export default CreateRecipe;
+export default withRouter(CreateRecipe);

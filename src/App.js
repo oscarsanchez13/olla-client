@@ -5,7 +5,6 @@ import LandingPage from './LandingPage/LandingPage';
 import CoffeeCatalog from './CoffeeCatalog/CoffeeCatalog';
 import Footer from './Footer/Footer';
 import CreateRecipe from './CreateRecipe/CreateRecipe';
-import { set } from 'date-fns';
 
 export default class App extends React.Component {
   state = {
@@ -39,15 +38,23 @@ export default class App extends React.Component {
     this.setState({searchTerm: term})
   }
 
-  render() {
+  render() {    
     return (
       <div>
         <main>
-          <header>
-            <h1 className="logo">
-              <Link to='/'>OLLA</Link>
-            </h1>          
-            <Nav/>
+          <header >
+            <div className='group'>
+              <div className='item'>
+                <Link to='/'>
+                  <span className='logo'>OLLA</span>
+                  <br></br>
+                  <span><i>Brew it into existance</i></span>
+                </Link>              
+              </div>
+              <div className='item-double'>
+                <Nav/>
+              </div>
+            </div>            
           </header>   
           <Route exact path='/'>
             <LandingPage />

@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# OLLA
+Thinkful (https://thinkful.com/) Fullstack Capstone Project- a responsive website site that demonstrate mastery of React, Node, and PostgreSQL by building both the client and the API to support the app.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Live Site
+You can find OLLA? at https://oscarsanchez13.github.io/olla-server/
+                      https://oscarsanchez13.github.io/olla-client/
 
-## Available Scripts
+![Sweater or Sandals? Landing Page]()
+![Sweater or Sandals? Discover Brews]()
+![Sweater or Sandals? Create Recipe]()
 
-In the project directory, you can run:
 
-### `npm start`
+## Introduction
+OLLA provides a place where coffee aficionados can save their favorite coffee recipes, learn more about such drinks, find out whether they would like them, and submit their own recipes for others to try! and will allow users to submit recipes by filling out a easy to follow form.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Use Case
+The user of this app will be able to join a community where he can easily share his own creations for others to try aswel as discovering others works.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## UX
+The initial wireframes for the page and the list of results can be seen below.
 
-### `npm test`
+![Wire Frame](https://gist.github.com/oscarsanchez13/e577445b7f8f0b1e1501ef867f244172)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technical
+* The app was built using JavaScript, jQuery, React, Node, and PostgreSQL.
+* The app is fully responsive.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Features Coming Soon
+* Implement a "Favorite" folder to user profiles where they can add/remove recipes found.
+* Ability to create a user profile
+* Adding more detailed categories to "Create Recipe" form, such as flavor profile, calories per drink, and a searching feature that finds nearby coffee houses using https://Foursquare.com API.
