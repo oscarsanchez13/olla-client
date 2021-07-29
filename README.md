@@ -2,12 +2,13 @@
 Thinkful (https://thinkful.com/) Fullstack Capstone Project- a responsive website site that demonstrate mastery of React, Node, and PostgreSQL by building both the client and the API to support the app.
 
 ## Live Site
-You can find OLLA? at https://oscarsanchez13.github.io/olla-server/
-                      https://oscarsanchez13.github.io/olla-client/
+You can find OLLA? 
+Server - https://oscarsanchez13.github.io/olla-server/
+Client - https://oscarsanchez13.github.io/olla-client/
 
-![Sweater or Sandals? Landing Page]()
-![Sweater or Sandals? Discover Brews]()
-![Sweater or Sandals? Create Recipe]()
+![OLLA Landing Page](https://github.com/oscarsanchez13/olla-client/blob/main/screenshots/screenshot-landing.PNG)
+![OLLA Discover Brews](https://github.com/oscarsanchez13/olla-client/blob/main/screenshots/screenshot-discover.PNG)
+![OLLA Create Recipe](https://github.com/oscarsanchez13/olla-client/blob/main/screenshots/screenshot-create.PNG)
 
 
 ## Introduction
@@ -19,7 +20,7 @@ The user of this app will be able to join a community where he can easily share 
 ## UX
 The initial wireframes for the page and the list of results can be seen below.
 
-![Wire Frame](https://gist.github.com/oscarsanchez13/e577445b7f8f0b1e1501ef867f244172)
+https://gist.github.com/oscarsanchez13/e577445b7f8f0b1e1501ef867f244172
 
 ## Technical
 * The app was built using JavaScript, jQuery, React, Node, and PostgreSQL.
