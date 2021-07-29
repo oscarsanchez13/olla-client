@@ -13,7 +13,7 @@ export default class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch('http://localhost:8000/recipes')
+    fetch('https://sheltered-temple-12613.herokuapp.com/recipes')
     .then(res => res.json())
     .then(res => this.setState({recipes:res}))  
     // get recipes from backend
