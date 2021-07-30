@@ -3,8 +3,9 @@ Thinkful (https://thinkful.com/) Fullstack Capstone Project- a responsive websit
 
 ## Live Site
 You can find OLLA? 
-Server - https://oscarsanchez13.github.io/olla-server/
-Client - https://oscarsanchez13.github.io/olla-client/
+* Live App - https://olla-app.herokuapp.com/
+* Server - https://oscarsanchez13.github.io/olla-server/
+* Client - https://oscarsanchez13.github.io/olla-client/
 
 ![OLLA Landing Page](https://github.com/oscarsanchez13/olla-client/blob/main/screenshots/screenshot-landing.PNG)
 ![OLLA Discover Brews](https://github.com/oscarsanchez13/olla-client/blob/main/screenshots/screenshot-discover.PNG)
